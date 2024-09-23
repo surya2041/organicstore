@@ -1,0 +1,102 @@
+/* .open-sans-<uniquifier> {
+    font-family: "Open Sans", system-ui;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  } */
+
+
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", system-ui;
+    font-size: large;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 16vh;
+    padding: 0 3rem;
+    align-items: center;
+  
+}
+
+nav div,
+nav div ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+.list{
+    display: none;
+}
+.hamburg{
+    display: none;
+}
+.showdesign{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem 0;
+    height: 100%;
+}
+@media (max-width: 911px) {
+    .list{
+        display: none;
+    }
+    nav div ul{
+        display: none;
+    }
+    .hamburg{
+        display: block;
+    }
+}
+
+/* Home page */
+
+main{
+    height:calc(100vh-40vh);
+    padding:0 3rem;
+    display: flex;
+    align-items: center;
+
+}
+.item{
+    margin:.7rem 0;
+}
+
+.shopNowBtn{
+    padding: .7rem 2rem;
+    background-color: #8BC34A;
+    color :white;
+    border :none;
+   border-radius: 5px;
+    font-weight: bold;
+}
+.heading{
+    font-size: 3rem;
+}
+.paragraph{
+    opacity: 80%;
+}
+@media(max-width:1200px){
+    main{
+        flex-direction: column;
+    }
+
+}
+    
+
+
+
+
